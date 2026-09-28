@@ -18,7 +18,19 @@ const server = http.createServer((req, res) => {
     res.end(JSON.stringify({ status: "ok" }));
     return;
   }
+  // --- ADDED THE VERSION ENDPOINT HERE ---
+  if (req.url === "/version") {
+    res.writeHead(200);
+    res.end(
+      JSON.stringify({
+        service: "platform-demo",
+        version: "1.0.0"
+      }),
+    );
+    return;
+  }
   res.writeHead(404);
   res.end(JSON.stringify({ error: "not found" }));
 });
 server.listen(PORT, () => console.log(`${APP_NAME} listening on ${PORT}.`));
+
