@@ -1,14 +1,14 @@
 # Default owner
-* @GitFabien
+* @Akl372
 
 # Platform configuration
-/.github/ @GitFabien
+/.github/ @Akl372
 
 # Application code
-/src/ @GitFabien
+/src/ @Akl372
 
 # Tests
-/test/ @GitFabien
+/test/ @Akl372
 
 # Deployment configuration
-/deploy/ @GitFabien
+/deploy/ @Akl372
